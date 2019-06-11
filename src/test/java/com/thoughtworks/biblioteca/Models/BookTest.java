@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class BookTest {
 
     @Test
-    public void shouldValidadeBookName() {
+    public void shouldValidateBookName() {
         Book book = new Book("AnyName Book", null, null);
         assertEquals("AnyName Book", book.getBookName());
     }
@@ -25,14 +25,14 @@ public class BookTest {
     }
 
     @Test
-    public void shouldValidadeYear() {
+    public void shouldValidateYear() {
         Integer year = 2019;
         Book book = new Book("AnyNameBook", "Author Name", year);
         assertEquals(year, book.getYear());
     }
 
     @Test
-    public void shoulValidadeAllInformationFromBook() {
+    public void shouldValidateAllInformationFromBook() {
 
         Integer year = 2019;
         Book book = new Book("AnyNameBook", "Author Name", year);
