@@ -1,5 +1,6 @@
 package com.thoughtworks.biblioteca;
 
+import com.thoughtworks.biblioteca.Models.Book;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -28,7 +29,7 @@ public class BibliotecaTest {
 
         BibliotecaPrinter printer = mock(BibliotecaPrinter.class);
         Biblioteca biblioteca = new Biblioteca(printer);
-        List<String> allBooksListed = biblioteca.booksOnLibrary;
+        List<Book> allBooksListed = biblioteca.booksOnLibrary;
 
         biblioteca.start();
 
