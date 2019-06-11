@@ -31,4 +31,13 @@ public class BookTest {
         assertEquals(year, book.getYear());
     }
 
+    @Test
+    public void shoulValidadeAllInformationFromBook() {
+
+        Integer year = 2019;
+        Book book = new Book("AnyNameBook", "Author Name", year);
+        String allInformation = "AnyNameBook - Author Name - " + year;
+        assertEquals(allInformation, book.getAllInformation());
+
+    }
 }
