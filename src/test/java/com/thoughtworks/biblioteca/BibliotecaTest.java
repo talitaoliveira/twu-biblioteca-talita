@@ -25,6 +25,7 @@ public class BibliotecaTest {
 
     @Test
     // 1.2
+    // O que acontece com os testes a medida que vai tendo outras features que "sobrepõem" o que tinha antes?
     public void shouldShowListOfBooksAfterWelcomeMessage() {
 
         BibliotecaPrinter printer = mock(BibliotecaPrinter.class);
@@ -37,4 +38,12 @@ public class BibliotecaTest {
 
     }
 
+    @Test
+    public void shouldHaveOptionsOnMenuOptions() {
+
+        BibliotecaPrinter printer = mock(BibliotecaPrinter.class);
+        Biblioteca biblioteca = new Biblioteca(printer);
+
+        assertFalse(biblioteca.getMenuOptions().isEmpty());
+    }
 }
