@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.biblioteca.BibliotecaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-12T21:17:37" hostname="Talitas-MacBook-Pro.local" time="0.261">
+  <properties/>
+  <testcase name="shouldShowMenuOptions" classname="com.thoughtworks.biblioteca.BibliotecaTest" time="0.261"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
