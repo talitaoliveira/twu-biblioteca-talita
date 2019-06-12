@@ -8,13 +8,14 @@ import java.util.List;
 public class Biblioteca {
 
     BibliotecaPrinter printer;
-
     List<Book> booksOnLibrary = new ArrayList<Book>();
+    List<String> menuOptions = new ArrayList<String>();
+    Menu menu;
 
 
-    public Biblioteca(BibliotecaPrinter printer) {
+    public Biblioteca(BibliotecaPrinter printer, Menu menu) {
         this.printer = printer;
-        populateLibrary();
+        this.menu = menu;
 
     }
 
@@ -24,7 +25,9 @@ public class Biblioteca {
 
     public void start() {
         printer.print(welcomeMessage());
-        printer.printAllBooks(booksOnLibrary);
+        menu.listOptions();
+        //getMenuOptions();
+        //printer.printAllBooks(booksOnLibrary);
 
     }
 
@@ -40,5 +43,11 @@ public class Biblioteca {
         booksOnLibrary.add(book2);
         booksOnLibrary.add(book3);
         booksOnLibrary.add(book4);
+    }
+
+    public List<String> getMenuOptions() {
+        this.menuOptions.add("Listar");
+
+        return this.menuOptions;
     }
 }
